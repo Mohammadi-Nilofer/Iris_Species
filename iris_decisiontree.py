@@ -36,8 +36,8 @@ if st.button("Predict Iris Species"):
     #Prediction
     prediction = model.predict(input_data)[0]
     if prediction == 0:
-    st.success(f"🟢 Predicted Iris Class: Setosa")
+    st.success("🟢 Predicted Iris Class: Setosa")
 elif prediction == 1:
-    st.success(f"🟢 Predicted Iris Class: Versicolor")
+    st.success("🟢 Predicted Iris Class: Versicolor")
 else:
-    st.success(f"🟢 Predicted Iris Class: Virginica")
+    st.success("🟢 Predicted Iris Class: Virginica")
