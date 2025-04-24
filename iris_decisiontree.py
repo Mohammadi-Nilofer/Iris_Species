@@ -17,7 +17,7 @@ with open('Decision_Tree_classifier.pkl', 'rb') as f:
 
 # Streamlit UI
 st.title("Iris Species Classification Web App")
-st.write("🔍 This app uses a Decision Tree Classifier model to predict Car Price.")
+st.write("🔍 This app uses a Decision Tree Classifier model to predict Iris Species.")
 
 SepalLengthCm=st.number_input("Enter SepalLengthCm",min_value=4.0 ,max_value=8.0)
 SepalWidthCm=st.number_input("Enter SepalWidthCm",min_value= 1.0 ,max_value=4.0)
@@ -37,7 +37,7 @@ if st.button("Predict Iris Species"):
     prediction = model.predict(input_data)[0]
     if prediction == 0:
       st.success(f"🟢 Predicted Iris Class: Setosa")
-      elif prediction == 1:
-        st.success(f"🟢 Predicted Iris Class: Versicolor")
-        else:
-          st.success(f"🟢 Predicted Iris Class: Virginica")
+    elif prediction == 1:
+      st.success(f"🟢 Predicted Iris Class: Versicolor")
+    else:
+      st.success(f"🟢 Predicted Iris Class: Virginica")
