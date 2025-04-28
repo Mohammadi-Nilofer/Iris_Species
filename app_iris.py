@@ -12,7 +12,7 @@ import pandas as pd
 import pickle
 
 # Load the trained model
-with open('Decision_Tree_classifier.pkl', 'rb') as file:
+with open('Decision_Tree_Classifier.pkl', 'rb') as file:
     clf = pickle.load(file)
 
 # Feature names used during training
