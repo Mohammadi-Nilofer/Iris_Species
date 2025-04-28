@@ -15,7 +15,7 @@ with open('Decision_Tree_classifier.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Define feature names (same as during model training)
-feature_names = ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
+feature_names = ['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm']
 
 # Streamlit UI
 st.title("Iris Species Classification Web App")
